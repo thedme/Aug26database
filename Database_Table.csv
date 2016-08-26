@@ -1,0 +1,11 @@
+"animals_id";"species";"type_of_cage";"food";"name";"weight"
+1;"gorilla";"ape";"bananas";"Harambie";1000.25
+2;"snek";"tank";"mice";"Mr. Snek";5.62
+3;"camel";"plains";"grass";"mr. camel";1520.6
+4;"Zebra";"plains";"grass";"Ms.Zebra";186.21
+5;"Lion";"lion enclosure";"animals";"mr.Bear";47852.12
+6;"hamster";"wheel";"pellets";"hamy";3.0
+7;"mouse";"box";"cheese";"mousy";2.0
+8;"otter";"pool";"fish";"otty";25.0
+9;"pig";"barn";"mud";"wilbur";3.0
+10;"chicken";"box";"worms";"Mcchicken";7.0
