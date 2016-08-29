@@ -1,35 +1,16 @@
 @CHARSET "ISO-8859-1";
 
-html {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+
+
+body { 
+background: url(image/cartoon_animals_05.jpg) no-repeat center center fuchsia; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
-body{
-	background-image: url("image/funny-zoo-animals-05.jpg");
+form {
 	
-    
-    background-repeat:repeat;
-    background-position: left bottom;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 3px solid #dddddd;
-    text-align: left;
-    padding: 15px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-tr:nth-child(odd) {
-    background-color: lightblue;
-}
