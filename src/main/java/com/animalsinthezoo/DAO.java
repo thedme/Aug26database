@@ -47,7 +47,7 @@ public class DAO {
 				animalInDB.setType_of_cage(RES_SET.getString("Type_of_cage"));
 				animalInDB.setFood(RES_SET.getString("food"));
 				animalInDB.setName(RES_SET.getString("name"));
-				animalInDB.setWeight(RES_SET.getDouble("weight"));
+				animalInDB.setWeight(RES_SET.getString("weight"));
 
 				ourAnimals.add(animalInDB);
 			}
@@ -61,7 +61,7 @@ public class DAO {
 		}
 	}
 
-	public static void writeToDB() {
+	public static void writeToDB(Animal addTodb) {
 		Animal animalToAdd = new Animal();
 		animalToAdd = aboutTheAnimal();
 
@@ -73,8 +73,9 @@ public class DAO {
 			PREP_STMT.setString(2, animalToAdd.getType_of_cage());
 			PREP_STMT.setString(3, animalToAdd.getFood());
 			PREP_STMT.setString(4, animalToAdd.getName());
-			PREP_STMT.setDouble(5, animalToAdd.getWeight());
+			PREP_STMT.setString(5, animalToAdd.getWeight());
 
+			System.out.println(PREP_STMT);
 			PREP_STMT.executeUpdate();
 
 		} catch (SQLException e) {
@@ -102,7 +103,7 @@ public class DAO {
 		animalToAdd.setName(sc.nextLine());
 
 		System.out.println("weight?");
-		animalToAdd.setWeight(Double.parseDouble(sc.nextLine()));
+		animalToAdd.setWeight(sc.nextLine());
 
 		return animalToAdd;
 		/*

@@ -25,7 +25,7 @@ public static void main(String[] args) {
 			DAO.readFromDB();
 			break;
 		case "2":
-			DAO.writeToDB();
+//			DAO.writeToDB();
 			break;
 
 		default:

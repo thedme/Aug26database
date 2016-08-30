@@ -7,7 +7,7 @@ public class Animal {
 	private String type_of_cage = null;
 	private String food = null;
 	private String name = null;
-	private Double weight = 0.0;
+	private String weight = null;
 
 	public Animal() {
 	}
@@ -52,11 +52,11 @@ public class Animal {
 		this.name = name;
 	}
 
-	public Double getWeight() {
+	public String getWeight() {
 		return weight;
 	}
 
-	public void setWeight(Double weight) {
+	public void setWeight(String weight) {
 		this.weight = weight;
 	}
 
